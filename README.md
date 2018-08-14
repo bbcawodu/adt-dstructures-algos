@@ -3,8 +3,8 @@
 
 ## Computer Science Fundamentals Overview
 	* Computer science is the study of problems, the problem solving process(Algorithms), and solutions that come from the process.
-	    * Algorithms describe the solution to a problem in terms of the data needed to represent the problem instance and the set of
-	    steps necessary to produce the intended result
+		* Algorithms describe the solution to a problem in terms of the data needed to represent the problem instance and the set of
+		steps necessary to produce the intended result
 
 	* Computer science uses abstraction as a tool for representing both processes and data.
 	* Procedural abstraction (Eg. Functions)
@@ -68,9 +68,9 @@
 	* ALWAYS GET EXAMPLES FOR THE PROBLEM(CONCRETE/SPECIFIC SAMPLE/EXAMPLE INPUTS AND OUTPUTS FOR THE PROBLEM).
 	* ALWAYS CHECK ASSUMPTIONS ABOUT THE PROBLEM
 	* ALWAYS WORK THROUGH A SAMPLE SOLUTION IN YOUR MIND/OUT LOUD/ON THE BOARD(WITHOUT CODE) BEFORE ATTEMPTING TO CODE SOLUTION.
-	    - ALWAYS WALK THROUGH SAMPLE/EXAMPLE INPUTS AND OUTPUTS PLUGGED INTO SAMPLE SOLUTION.
-	    - ALWAYS CHECK TIME AND SPACE COMPLEXITIES OF THE SAMPLE SOLUTION
-  	* ALWAYS ENCODE THE SAMPLE SOLUTION INTO AN ACTUAL PROGRAMMING LANGUAGE AND NOT PSEUDO CODE.
-    	* ALWAYS WALK THROUGH SAMPLE/EXAMPLE INPUTS AND OUTPUTS PLUGGED INTO CODED SAMPLE SOLUTION.
+		- ALWAYS WALK THROUGH SAMPLE/EXAMPLE INPUTS AND OUTPUTS PLUGGED INTO SAMPLE SOLUTION.
+		- ALWAYS CHECK TIME AND SPACE COMPLEXITIES OF THE SAMPLE SOLUTION
+	* ALWAYS ENCODE THE SAMPLE SOLUTION INTO AN ACTUAL PROGRAMMING LANGUAGE AND NOT PSEUDO CODE.
+		* ALWAYS WALK THROUGH SAMPLE/EXAMPLE INPUTS AND OUTPUTS PLUGGED INTO CODED SAMPLE SOLUTION.
 
 
