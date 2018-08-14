@@ -19,7 +19,7 @@
     * To put it simply, ADT is a logical description and data structure is concrete. ADT is the logical picture of the data and the operations
     to manipulate the component elements of the data. A data structure is a concrete implementation of the specification provided by an ADT. ADT
     is in the logical level and data structure is in the implementation level.
-      * NOTE: example: linked list is an ADT, and every ADT is also a data structure, so linked list is both.
+      * NOTE: example: linked list is a Data Structure, and every data structure is more specigic/implemented version of an ADT, so linked list is both.
   * Abstract data types allow programmers to manage the complexity of a problem domain by hiding the details of the data.
 
   * Programming is the process of taking an algorithm and encoding it into a notation, a programming language, so that it can be executed by a
