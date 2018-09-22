@@ -38,10 +38,21 @@
     * Python is a powerful, yet easy-to-use, object-oriented language.
     * Lists, tuples, and strings are built in Python sequential collections.
     * Dictionaries and sets are nonsequential collections of data.
-    * Classes allow programmers to implement abstract data types.
+    * Classes allow programmers to implement data structures.
     * Programmers can override standard methods as well as create new methods.
     * Classes can be organized into hierarchies.
-    * A class constructor should always invoke the constructor of its parent before continuing on with its own data and behavior.
+    * A class constructor(__init__) should always invoke the constructor of its parent before continuing on with its own data and behavior.
+  * Javasctipt
+    * Javascript is a powerful interpreted(program where each line is executed freely without the whole program being compiled) language designed to be run in browser
+      * Javascript runtimes(program designed to perform the execution model) do exist. (NodeJS)
+    * Prototype based language
+      * Each object has a prototype object that it inherits attributes and methods from.
+      * Form a prototype chain in which powerful abstract data type/data structure heiarchies can be created
+      * An object's prototype is not to be confused with constructor/prototype functions.
+        * The prototype of an object is descrbed above, while constructor/prototype functions act as ways to describe/implement new objects(data structures).
+  * Javascript's Promise vs Python's Deferred
+    * Promises and Deferreds are similar in that they both represent ways to encode the execution order of asynchronous(interleaved) code while being decoupled from synchronous(one after the other) code.
+    * The difference is that Promises represent the eventual completion(resolve) or failure(reject) of an asynchronous operation, returning/awating it's resulting value(s). While Deferreds represent the encoding of the execution order of asynchronous code while also returning/yielding the results of completion to callback functions(callbacks) or errors to error functions(errbacks). A subtle distinction.
 
 ## Algorithmic Analysis Overview
   * Algorithm analysis is an implementation-independent way of measuring an algorithm.

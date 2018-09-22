@@ -10,5 +10,5 @@
 
 # Visualizing Recursion
   * Visualizing recursion is important. These will be notes about vizualizing recursion
-
-  ## Fractals
+  
+  # Fractals
