@@ -14,4 +14,4 @@
     and the set of nine edges:
     ```E={(v0,v1,5),(v1,v2,4),(v2,v3,9),(v3,v4,7),(v4,v0,1),(v0,v5,2),(v5,v4,8),(v3,v5,3),(v5,v2,1)}```
 
-    [!example digraph](/img/digraph.png)
+    [!example digraph](img/digraph.png)
