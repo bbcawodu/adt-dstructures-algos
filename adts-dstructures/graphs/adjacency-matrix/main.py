@@ -1,6 +1,6 @@
 class Graph(object):
   """
-  Graph Data Structure with an adjacency list implementation - Recall that when we give an abstract data type a physical implementation we refer to the implementation as a data structure.
+  Graph Data Structure with an adjacency matrix implementation - Recall that when we give an abstract data type a physical implementation we refer to the implementation as a data structure.
   """
   
   def __init__(self):
