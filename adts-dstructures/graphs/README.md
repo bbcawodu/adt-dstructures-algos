@@ -29,5 +29,6 @@
     * getVertices() returns the list of all vertices in the graph.
     * in returns True for a statement of the form vertex in graph, if the given vertex is in the graph, False otherwise.
   * Beginning with the formal definition for a graph there are several ways we can implement the graph ADT in Python. We will see that there are trade-offs in using different representations to implement the ADT described above. There are two well-known implementations of a graph, the adjacency matrix and the adjacency list. We will explain both of these options, and implement them as Python classes.
-  * [Adjacency Matrix Explanation](adjacency-matrix/README.md)
-  * [Adjacency List Explanation](adjacency-list/README.md)
+    * [Adjacency Matrix Explanation and Implementation](adjacency-matrix/README.md)
+    * [Adjacency List Explanation and Implentation](adjacency-list/README.md)
+  * [Algorithms Using the Graph ADT and Data Structure](graph-algos/README.md)
