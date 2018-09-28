@@ -1,5 +1,6 @@
 # Abstract Data Types, Data Structures, and Algorithms
   * This repo serves as an overview of abstract data types, data structures, and algorithms.
+  * Large Portions of this repo uses [Problem Solving with Algorithms and Data Structures using Python](https://interactivepython.org/runestone/static/pythonds/index.html) as a reference.
 
   
 ## Computer Science Fundamentals Overview
@@ -85,4 +86,9 @@
   * ALWAYS ENCODE THE SAMPLE SOLUTION INTO AN ACTUAL PROGRAMMING LANGUAGE AND NOT PSEUDO CODE.
     * ALWAYS WALK THROUGH SAMPLE/EXAMPLE INPUTS AND OUTPUTS PLUGGED INTO CODED SAMPLE SOLUTION.
 
+## ADTs, Data Structures, and Algorithims Explained and Implemented
+  * [ADTs and Data Structures](adts-dstructures/README.md)
+  * [Algorithms](algos/README.md)
 
+## Acknowledgements
+  * [Problem Solving with Algorithms and Data Structures using Python](https://interactivepython.org/runestone/static/pythonds/index.html)
