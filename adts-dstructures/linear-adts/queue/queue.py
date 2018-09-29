@@ -1,22 +1,22 @@
 class Queue(object):
-    def __init__(self):
-        self.items = []
+  def __init__(self):
+    self.items = []
 
-    def isEmpty(self):
-        return self.items == []
+  def isEmpty(self):
+    return self.items == []
 
-    def enqueue(self, item):
-        self.items.insert(0,item)
+  def enqueue(self, item):
+    self.items.insert(0,item)
 
-    def dequeue(self):
-        return self.items.pop()
+  def dequeue(self):
+    return self.items.pop()
 
-    def size(self):
-        return len(self.items)
+  def size(self):
+    return len(self.items)
 
 
 def main():
-    pass
+  pass
 
 
 """
@@ -28,5 +28,5 @@ be set to the module's name.
 By doing the __main__ check, you can control when parts of code execute.
 """
 if __name__ == "__main__":
-    main()
+  main()
 

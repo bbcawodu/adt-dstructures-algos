@@ -9,22 +9,22 @@ class Graph(object):
       self.adjMatrix.append([-1 for i in range(size)])
     self.size = size
 
-  def addEdge(self, v1, v2, weight=0):
-    if v1 == v2:
-      print("Same vertex %d and %d" % (v1, v2))
+  def addEdge(self, key_index_for_v1, key_index_for_v2, weight=0):
+    if key_index_for_v1 == key_index_for_v2:
+      print("Same vertex for key indexes %d and %d" % (key_index_for_v1, key_index_for_v2))
       return
-    self.adjMatrix[v1][v2] = weight
-    self.adjMatrix[v2][v1] = weight
+    self.adjMatrix[key_index_for_v1][key_index_for_v2] = weight
+    self.adjMatrix[key_index_for_v2][key_index_for_v1] = weight
 
-  def removeEdge(self, v1, v2):
-    if self.adjMatrix[v1][v2] == -1:
-      print("No edge between %d and %d" % (v1, v2))
+  def removeEdge(self, key_index_for_v1, key_index_for_v2):
+    if self.adjMatrix[key_index_for_v1][key_index_for_v2] == -1:
+      print("No edge between vertecies with key indexes %d and %d" % (key_index_for_v1, key_index_for_v2))
       return
-    self.adjMatrix[v1][v2] = -1
-    self.adjMatrix[v2][v1] = -1
+    self.adjMatrix[key_index_for_v1][key_index_for_v2] = -1
+    self.adjMatrix[key_index_for_v2][key_index_for_v1] = -1
 
-  def containsEdge(self, v1, v2):
-    return True if self.adjMatrix[v1][v2] >= 0 else False
+  def containsEdge(self, key_index_for_v1, key_index_for_v2):
+    return True if self.adjMatrix[key_index_for_v1][key_index_for_v2] >= 0 else False
 
   def __len__(self):
     return self.size
