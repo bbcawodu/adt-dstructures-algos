@@ -19,6 +19,16 @@
     ![In Progress BFS Step 3](img/bfs_example_3.png)
   * Work through the algorithm on your own so that you are comfortable with how it works. The figure below shows the final breadth first search tree after all the vertices in the [word_ladder_example_1](img/word_ladder_example_1.png) graph have been expanded. The amazing thing about the breadth first search solution is that we have not only solved the FOOL–SAGE problem we started out with, but we have solved many other problems along the way. We can start at any vertex in the breadth first search tree and follow the predecessor arrows back to the root to find the shortest word ladder from any word back to fool. The function [traverse()](main.py) shows how to follow the predecessor links to print out the word ladder.
     ![In Progress BFS Step 4](img/bfs_example_4.png)
+  * [Breadth first search](main.py) Analysis
+    * Let's analyze the run time performance of the breadth first search algorithm.
+    * The first thing to observe is that the while loop is executed, at most, one time for each vertex in the graph |V|. You can see that this is true because a vertex must be white before it can be examined and added to the queue and the current vertex is set to black at the end of each iteration of the while loop. This gives us O(V) for the while loop.
+    * The for loop, which is nested inside the while is executed at most once for each edge in the graph, |E|. The reason is that every vertex is dequeued at most once and we examine an edge from node u to node v only when node u is dequeued. The examination is only executed if the to_vertex being checked by an edge is white. This gives us O(E) for the for loop.
+    * Combining the two loops gives us O(V+E).
+    * Of course doing the breadth first search is only part of the task. Following the links from the starting node to the goal node is the other part of the task. The worst case for this would be if the graph was a single long chain. In this case traversing through all of the vertices would be O(V). The normal case is going to be some fraction of |V| but we would still write O(V).
+    * bfs + traversal thus = O(V + E + V) = O(2V + E) = O(V + E)  
+
+
+    
 
 
 

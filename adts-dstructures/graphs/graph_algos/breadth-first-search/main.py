@@ -4,14 +4,14 @@ class Vertex(object):
   edges/neighbors of each vertex are maintained on the vertex object while the master list of verticies are maintained on the Graph data structure/class.
   """
 
-  def __init__(self,key):
+  def __init__(self, key):
     self.id = key
     self.connectedTo = {}
     self.color = 'white'
     self.distance = 0
     self.predecessor = None
 
-  def addNeighbor(self,neighbor,weight=0):
+  def addNeighbor(self, neighbor, weight=0):
     self.connectedTo[neighbor] = weight
 
   def __str__(self):
@@ -23,7 +23,7 @@ class Vertex(object):
   def getId(self):
     return self.id
 
-  def getWeight(self,neighbor):
+  def getWeight(self, neighbor):
     return self.connectedTo[neighbor]
 
   def setColor(self, col):
@@ -33,7 +33,7 @@ class Vertex(object):
     return self.color
 
   def setDistance(self, dist):
-    self.distance = dis
+    self.distance = dist
 
   def getDistance(self):
     return self.distance
@@ -54,22 +54,22 @@ class Graph(object):
     self.vertList = {}
     self.numVertices = 0
 
-  def addVertex(self,key):
+  def addVertex(self, key):
     self.numVertices = self.numVertices + 1
     newVertex = Vertex(key)
     self.vertList[key] = newVertex
     return newVertex
 
-  def getVertex(self,key):
+  def getVertex(self, key):
     if key in self.vertList:
       return self.vertList[key]
     else:
       return None
 
-  def __contains__(self,key):
+  def __contains__(self, key):
     return key in self.vertList
 
-  def addEdge(self,from_vertex_key,to_vertex_key,cost=0):
+  def addEdge(self, from_vertex_key, to_vertex_key, cost=0):
     if from_vertex_key not in self.vertList:
       nv = self.addVertex(from_vertex_key)
     if to_vertex_key not in self.vertList:
@@ -100,28 +100,35 @@ class Queue(object):
     return len(self.items)
 
 
-def bfs(g,start):
+def bfs(g, start):
   start.setDistance(0)
   start.setPred(None)
+  # need to chanage dfs to use priority queue by the distance value so that the dfs can take edge weight into account, also need to change the neighbor.setdistance to be currentVert.getDistance() + weight
   vertQueue = Queue()
   vertQueue.enqueue(start)
   while (vertQueue.size() > 0):
     currentVert = vertQueue.dequeue()
-    for nbr in currentVert.getConnections():
-      if (nbr.getColor() == 'white'):
-        nbr.setColor('gray')
-        nbr.setDistance(currentVert.getDistance() + 1)
-        nbr.setPred(currentVert)
-        vertQueue.enqueue(nbr)
+    for neighbor in currentVert.getConnections():
+      if (neighbor.getColor() == 'white'):
+        neighbor.setColor('gray')
+        neighbor.setDistance(currentVert.getDistance() + 1)
+        neighbor.setPred(currentVert)
+        vertQueue.enqueue(neighbor)
     currentVert.setColor('black')
+
+
+def traverse_using_predecessor_refs(start):
+  current = start
+  while (current.getPred()):
+    print(current.getId())
+    current = current.getPred()
+  print(current.getId())
 
 
 def main():
   g = Graph()
   for i in range(6):
     g.addVertex(i)
-
-  print(g.vertList)
 
   g.addEdge(0,1,5)
   g.addEdge(0,5,2)
@@ -132,9 +139,9 @@ def main():
   g.addEdge(4,0,1)
   g.addEdge(5,4,8)
   g.addEdge(5,2,1)
-  for v in g:
-    for w in v.getConnections():
-      print("( %s , %s , %s )" % (v.getId(), w.getId(), v.getWeight(w)))
+
+  bfs(g, g.getVertex(0))
+  traverse_using_predecessor_refs(g.getVertex(4))
 
 
 """
