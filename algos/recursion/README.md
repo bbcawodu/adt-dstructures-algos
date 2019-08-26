@@ -1,4 +1,5 @@
 # Recursion - Recursive Algorithms, Functions, and Procedural Abstractions
+  * Recursion definition - the repeated application of a recursive procedure or definition.
   * Recursion is a method of solving problems that involves breaking a problem down into smaller and smaller subproblems until you get to a small enough problem that it can be solved trivially. Usually recursion involves a function calling itself. While it may not seem like much on the surface, recursion allows us to write elegant solutions to problems that may otherwise be very difficult to program.
   * All recursive algorithms must obey three important laws:
     * A recursive algorithm must have a base case.
