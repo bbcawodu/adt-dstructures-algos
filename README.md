@@ -57,6 +57,8 @@
 
 ## Algorithmic Analysis Overview
   * Algorithm analysis is an implementation-independent way of measuring an algorithm.
+  * Algorithms can be analyzed based on their space or time requirements. There is often a trade off between space and time when
+  optimizing an algorithm.
     * Big-O notation allows algorithms to be classified by their dominant process with respect to the size of the problem.
       * e.g. T(n)=1+n
         * The parameter n is often referred to as the “size of the problem,” and we can read this as “T(n) is the time it takes to solve a problem
@@ -76,7 +78,7 @@
         * 2^n   Exponential
         * n!    Factorial
 
-## Interview Question Approach Guidlines
+## Problem Solving Approach Guidlines
   * ALWAYS RESTATE PROBLEM OUT LOUD IN YOUR OWN WORDS
   * ALWAYS GET EXAMPLES FOR THE PROBLEM(CONCRETE/SPECIFIC SAMPLE/EXAMPLE INPUTS AND OUTPUTS FOR THE PROBLEM).
   * ALWAYS CHECK ASSUMPTIONS ABOUT THE PROBLEM
