@@ -88,7 +88,7 @@
   * ALWAYS ENCODE THE SAMPLE SOLUTION INTO AN ACTUAL PROGRAMMING LANGUAGE AND NOT PSEUDO CODE.
     * ALWAYS WALK THROUGH SAMPLE/EXAMPLE INPUTS AND OUTPUTS PLUGGED INTO CODED SAMPLE SOLUTION.
 
-## ADTs, Data Structures, and Algorithims Explained and Implemented
+## ADTs, Data Structures, and Algorithms Explained and Implemented
   * [ADTs and Data Structures](adts-dstructures/README.md)
   * [Algorithms](algos/README.md)
 
